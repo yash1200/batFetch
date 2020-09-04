@@ -47,10 +47,11 @@ for directory in $(ls -d $dir*/); do
     fi
 done
 
-# Looping to display all the data.
+# Looping through all the available batteries.
 for bat in ${batteries[@]}; do
     echo ""
     echo "Battery ---> ${bat:24:4}"
+    # Looping to get all the data for a battery.
     for index in ${!files[@]}; do
         echo ${property[index]} : $(cat $bat${files[index]})
     done
