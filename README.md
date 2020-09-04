@@ -17,6 +17,10 @@ batFetch is a bash shell script to show all the information about batteries in y
 * Voltage min design
 * Voltage now
 
+## Screenshot
+
+![img](https://imgur.com/wXlWWNa.png)
+
 ## Usage
 
 * Clone the repository in local system.
