@@ -13,7 +13,20 @@ batFetch is a bash shell script to show all the information about batteries in y
 * Charge Now
 * Charge Full
 * Current Now
-* Cycle Count
 * Serial Number
 * Voltage min design
 * Voltage now
+
+## Usage
+
+* Clone the repository in local system.
+
+  ```
+  git clone https://github.com/yash1200/batFetch.git
+  ```
+  
+* In the downloaded code, run :
+  
+  ```
+  sh batfetch.sh
+  ```
