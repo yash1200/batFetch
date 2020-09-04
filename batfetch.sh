@@ -5,19 +5,19 @@ dir="/sys/class/power_supply/"
 
 # Array to store the name of files having battery information.
 files=(
-manufacturer 
-model_name 
-capacity 
-status 
-technology 
-capacity_level 
-charge_now 
-charge_full 
-current_now 
-cycle_count 
-serial_number 
-voltage_min_design 
-voltage_now
+manufacturer # Reports the name of the device manufacturer.
+model_name # Reports the name of the device model.
+capacity # Fine grain representation of battery capacity.
+status # Represents the charging status of the battery.
+technology #Describes the battery technology supported by the supply.
+type # Describes the main type of the supply.
+capacity_level # Reports an average IBAT current reading for the battery.
+charge_now # Reports the current coloumb counter value inside the battery monitor chip.
+charge_full # Reports the assumed battery 'full level'
+current_now # Reports the IBUS current supplied now.
+serial_number # Reports the serial number of the device.
+voltage_now # Reports an instant, single VBAT voltage reading for the battery.
+voltage_min_design #Reports the minimum safe VBAT voltage permitted for the battery, during discharging
 )
 
 # Properties name of information.
@@ -27,14 +27,14 @@ Model\ Name
 Capacity 
 Status 
 Technology 
+Type 
 Capacity\ Level 
 Charge\ Now 
 Charge\ Full 
 Current\ Now 
-Cycle\ Count 
 Serial\ Number 
+Voltage\ Now 
 Voltage\ Min\ Design 
-Voltage\ Now
 )
 
 # Array to store
