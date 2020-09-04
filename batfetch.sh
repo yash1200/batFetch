@@ -11,8 +11,8 @@ capacity
 status 
 technology 
 capacity_level 
-charge_full 
 charge_now 
+charge_full 
 current_now 
 cycle_count 
 serial_number 
@@ -28,8 +28,8 @@ Capacity
 Status 
 Technology 
 Capacity\ Level 
-Charge\ Full 
 Charge\ Now 
+Charge\ Full 
 Current\ Now 
 Cycle\ Count 
 Serial\ Number 
