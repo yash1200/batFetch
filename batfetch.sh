@@ -61,6 +61,6 @@ for bat in ${batteries[@]}; do
     echo "-----------------"
     # Looping to get all the data for a battery.
     for index in ${!files[@]}; do
-        echo ${bold}${green}${property[index]} :${reset} $(cat $bat${files[index]})
+        echo ${bold}${green}${property[index]}:${reset} $(cat $bat${files[index]})
     done
 done
