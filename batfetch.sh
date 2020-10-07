@@ -1,4 +1,11 @@
-echo "Welcome to Batfetch!"
+# Colors
+green=`tput setaf 2` # Green color.
+reset=`tput sgr0` # Reset Color.
+
+# Bold Font
+bold=`tput bold`
+
+echo "${bold}${green}Welcome to Batfetch!${reset}"
 
 # Battery data directory of linux system.
 dir="/sys/class/power_supply/"
@@ -50,9 +57,10 @@ done
 # Looping through all the available batteries.
 for bat in ${batteries[@]}; do
     echo ""
-    echo "Battery ---> ${bat:24:4}"
+    echo "${bold}${green}Battery ---> ${bat:24:4}${reset}"
+    echo "-----------------"
     # Looping to get all the data for a battery.
     for index in ${!files[@]}; do
-        echo ${property[index]} : $(cat $bat${files[index]})
+        echo ${bold}${green}${property[index]} :${reset} $(cat $bat${files[index]})
     done
 done
